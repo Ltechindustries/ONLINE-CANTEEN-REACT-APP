@@ -1,0 +1,44 @@
+.user-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.cart-info {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-card {
+  border: 1px solid chocolate;
+  padding: 20px;
+  width: 180px;
+  border-radius: 8px;
+  
+}
+
+.menu-card h3 {
+  margin-bottom: 10px;
+}
+
+.menu-card button:hover{
+  background-color: chocolate;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.imgsty{
+  height: 150px;
+  width: 150px;
+  justify-items: center;
+  border-radius: 15px;
+}
+.topnav{
+  height: 100px;
+  background-color: chocolate;
+}

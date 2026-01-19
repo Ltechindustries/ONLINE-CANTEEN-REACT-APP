@@ -1,0 +1,44 @@
+.home-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 200px;
+}
+
+button{
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  
+}
+.trs{
+  padding: 10px;
+  
+  height: fit-content;
+  width: fit-content;
+  background-color: rgb(118, 215, 198);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.layout {
+  min-height: 100vh;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  background-color: chocolate;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+

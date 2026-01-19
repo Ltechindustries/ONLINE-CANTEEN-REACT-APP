@@ -1,0 +1,30 @@
+.admin-container {
+  padding: 30px;
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.ready {
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}

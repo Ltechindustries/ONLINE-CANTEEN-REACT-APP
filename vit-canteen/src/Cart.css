@@ -1,0 +1,23 @@
+.cart-container {
+  padding: 30px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+li button {
+  margin-left: 10px;
+}
+
+.place-order {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.status-container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.status-card {
+  border: 2px solid #ccc;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.ready {
+  color: green;
+  font-weight: bold;
+}
