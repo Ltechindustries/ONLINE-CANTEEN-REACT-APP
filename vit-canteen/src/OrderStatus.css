@@ -1,6 +1,7 @@
 .status-container {
   text-align: center;
   margin-top: 80px;
+  background-image: linear-gradient(to right, rgb(247, 129, 44), rgb(248, 95, 52));
 }
 
 .status-card {
@@ -9,10 +10,33 @@
   margin: auto;
   padding: 20px;
   border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rate-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(247, 129, 44);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rate-button:hover {
+  background-color: rgb(232, 102, 16);
+}
+
+.status-card p {
+  margin: 0;
 }
 
 .pending {
-  color: orange;
+  color: rgb(240, 239, 236);
   font-weight: bold;
 }
 

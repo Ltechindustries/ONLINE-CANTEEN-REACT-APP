@@ -1,6 +1,20 @@
 import "./Admin.css";
 
 function Admin({ orders, setOrders }) {
+  const totalOrders = orders.length;
+
+const completedOrders = orders.filter(
+  (o) => o.status === "Ready"
+).length;
+
+const pendingOrders = orders.filter(
+  (o) => o.status !== "Ready"
+).length;
+
+// Optional (if you have payment later)
+const paidOrders = orders.filter(
+  (o) => o.payment === "Paid"
+).length;
   const markAsReady = (token) => {
     const updatedOrders = orders.map((order) =>
       order.token === token
@@ -14,10 +28,31 @@ function Admin({ orders, setOrders }) {
   return (
     <div className="admin-container">
       <h1>📋 Admin Dashboard</h1>
+      <div className="dashboard-summary">
+  <div className="card">
+    📦 Total Orders
+    <h2>{totalOrders}</h2>
+  </div>
 
+  <div className="card">
+    ✅ Completed
+    <h2>{completedOrders}</h2>
+  </div>
+
+  <div className="card">
+    ⏳ Pending
+    <h2>{pendingOrders}</h2>
+  </div>
+
+  <div className="card">
+    💳 Payments
+    <h2>{paidOrders || 0}</h2>
+  </div>
+</div>
       {orders.length === 0 ? (
         <p>No orders yet</p>
       ) : (
+        
         <table>
           <thead>
             <tr>

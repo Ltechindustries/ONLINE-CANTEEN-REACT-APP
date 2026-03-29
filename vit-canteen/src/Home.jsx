@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Food from "./foodan.json";
 import "./Home.css";
+import Lottie from "lottie-react";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -16,6 +18,14 @@ function HomePage() {
     }
   };
 
+  const mosef=(x)=>{
+    x.target.style.backgroundColor="black";
+  }
+
+  const moseof=(x)=>{
+    x.target.style.backgroundColor="orange";
+  }
+
   const handleAdminLogin = () => {
     if (username === "admin" && password === "admin123") {
       navigate("/admin");
@@ -25,7 +35,9 @@ function HomePage() {
   };
 
   return (
+    
     <div className="layout" style={{ height:'100%' }}>
+      <Lottie animationData={Food} />
     <tr className="trs">
     <div className="home-container">
       <img src="/wplogo.png" style={{height:100,width:100}}></img>
@@ -46,10 +58,12 @@ function HomePage() {
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      <button onClick={handleUserLogin}>User Login</button>
-      <button onClick={handleAdminLogin}>Admin Login</button>
+      <button id="u1" onClick={handleUserLogin} onMouseOver={mosef} onMouseOut={moseof}>User Login</button>
+      <button id="u2" onClick={handleAdminLogin}onMouseOver={mosef} onMouseOut={moseof}>Admin Login</button>
+      
     </div>
     </tr>
+    
     </div>
     
 

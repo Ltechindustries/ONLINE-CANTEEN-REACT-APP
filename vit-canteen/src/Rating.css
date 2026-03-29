@@ -1,0 +1,28 @@
+.rating-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.stars {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.star {
+  cursor: pointer;
+  color: gray;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+.star.active {
+  color: gold;
+}
+
+textarea {
+  width: 400px;
+  height: 120px;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 8px;
+}

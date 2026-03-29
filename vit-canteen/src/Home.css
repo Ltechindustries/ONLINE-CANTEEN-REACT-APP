@@ -41,4 +41,9 @@ button{
   background-size: cover;
   background-position: center;
 }
-
+button{
+  color: rgb(246, 246, 251);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: orange;
+  font-weight: bold;
+}

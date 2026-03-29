@@ -7,6 +7,7 @@ import Cart from "./Cart.jsx";
 import Admin from "./Admin.jsx";
 import Token from "./Token.jsx";
 import OrderStatus from "./OrderStatus.jsx";
+import Rating from "./Rating.jsx";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -71,6 +72,11 @@ function App() {
           path="/admin"
           element={<Admin orders={orders} setOrders={setOrders} />}
         />
+        <Route
+          path="/rating"
+          element={<Rating />}
+        />
+
       </Routes>
     </Router>
   );

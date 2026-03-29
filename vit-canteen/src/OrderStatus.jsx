@@ -1,6 +1,8 @@
 import "./OrderStatus.css";
+import { useNavigate } from "react-router-dom";
 
 function OrderStatus({ token, orders }) {
+  const navigate = useNavigate();
   const order = orders.find((o) => o.token === token);
 
   if (!order) {
@@ -9,7 +11,7 @@ function OrderStatus({ token, orders }) {
 
   return (
     <div className="status-container">
-      <h1>📦 Order Status</h1>
+      <h1>Order Status</h1>
 
       <div className="status-card">
         <h2>Token: {order.token}</h2>
@@ -19,8 +21,16 @@ function OrderStatus({ token, orders }) {
         </p>
 
         <p>
-          <b>Total:</b> ₹{order.total}
+          <b>Total:</b> Rs. {order.total}
         </p>
+
+        <button
+          className="rate-button"
+          onClick={() => navigate("/rating")}
+          type="button"
+        >
+          Rate Your Experience
+        </button>
 
         <p className={order.status === "Ready" ? "ready" : "pending"}>
           <b>Status:</b> {order.status}
